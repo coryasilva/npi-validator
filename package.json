@@ -1,0 +1,40 @@
+{
+	"name": "npi-validator",
+	"version": "1.0.0",
+	"description": "Validate NPI numbers for healthcare physicians or organizations.",
+	"homepage": "https://github.com/coryasilva/npi-validator#readme",
+	"bugs": {
+		"url": "https://github.com/coryasilva/npi-validator/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/coryasilva/npi-validator.git"
+	},
+	"author": {
+		"name": "Cory Silva",
+		"url": "https://corysilva.com"
+	},
+	"keywords": [
+		"healthcare",
+		"npi",
+		"validation"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"type": "module",
+	"sideEffects": false,
+	"main": "index.js",
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
+	"scripts": {
+		"test": "xo && ava && tsc index.d.ts"
+	},
+	"devDependencies": {
+		"ava": "^6.0.1",
+		"typescript": "^5.3.3",
+		"xo": "^0.56.0"
+	}
+}
